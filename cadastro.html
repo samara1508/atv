@@ -8,6 +8,7 @@
 </head>
 <body>
     <form action="./usuariocadastrado.html">
+        <h2>Cadastro Inteligente</h2>
         <fieldset>
             <legend>Dados Pessoais</legend>
             <p>
@@ -131,42 +132,11 @@
                 </p>
                 <p>
                     <b>Termos de Uso:</b>
-                    <pre>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam est 
-                    tellus, tincidunt at sapien a, euismod imperdiet felis. Vestibulum fringilla tristique quam id ullamcorper. Sed venenatis 
-                    viverra mi vitae sagittis. Proin convallis sapien tellus, vel pellentesque turpis dignissim eget. Nullam sodales tincidunt 
-                    gittis. Cras ut diam rutrum, feugiat urna sed, euismod leo. Nulla nibh arcu, scelerisque ac metus et, aliquet varius lorem. 
-                    Fusce tincidunt eros justo, at ornare diam bibendum sit amet. Sed id ornare risus. Sed et justo tellus. Maecenas at interdum 
-                    arcu, ac cursus neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur 
-                    vitae arcu urna. Sed vitae lorem nec mi posuere posuere et quis risus.
-
-                    Donec pharetra iaculis aliquet. Suspendisse vel tempus purus. Vestibulum non dignissim nisl. Integer congue, lorem id 
-                    malesuada euismod, metus elit ultricies nibh, quis lacinia neque justo ac sapien. Praesent nec sem ornare magna euismod 
-                    porttitor quis ac ipsum. Mauris nec mi eget urna consectetur dictum et ut sapien. Sed maximus nisi et sem ultricies gravida. 
-                    Suspendisse pharetra dui in justo laoreet, a lobortis erat tincidunt. In dapibus dolor pretium sem laoreet dictum. Suspendisse 
-                    porta ligula rutrum, vestibulum nibh vitae, blandit augue. Sed tristique iaculis orci.
-                    
-                    Quisque quis vestibulum ex. Quisque pharetra tristique efficitur. Suspendisse vulputate ex venenatis, semper lorem vel, 
-                    blandit mauris. Nunc massa ante, aliquam ac fringilla sed, convallis et urna. Ut est sapien, ultricies quis arcu quis, varius 
-                    suere ante. Aliquam cursus purus et iaculis ullamcorper. Cras nec quam in odio iaculis commodo sit amet sit amet tellus. Etiam 
-                    eu urna non neque efficitur placerat id ut ipsum. Praesent non ante risus. Phasellus ante diam, egestas et elit sed, porta 
-                    condimentum turpis.
-                    
-                    Etiam vel leo ut massa semper posuere eget eget velit. Aliquam aliquam metus id nulla dapibus sollicitudin. Suspendisse egestas, 
-                    u gravida ultrices, quam libero faucibus nibh, id aliquam turpis magna vel magna. Aliquam et ipsum sem. Donec faucibus justo ex, quis 
-                    ngue orci tristique blandit. Suspendisse imperdiet egestas leo. Suspendisse et efficitur dolor. Maecenas ac lorem urna. Maecenas 
-                    vulputate nulla vitae metus iaculis, et ornare sem imperdiet. Suspendisse potenti. Phasellus ante lorem, pulvinar in mi quis, vestibulum 
-                    posuere est. Nam suscipit imperdiet dui congue consectetur.
-                    
-                    Vivamus placerat erat at sodales lacinia. Aliquam eu condimentum erat. Integer dapibus, urna vitae feugiat tristique, nunc orci elementum 
-                    magna, sit amet cursus est metus sed purus. Vivamus pulvinar scelerisque erat, id tincidunt ex congue id. Sed ultricies turpis ut tempus 
-                    aliquet. Nunc a auctor nisl, a auctor velit. Integer accumsan maximus libero et facilisis. Suspendisse ut euismod mauris. Ut vitae lacus 
-                    ligula. Proin non placerat dui, non iaculis nisi. Ut et eleifend diam. Curabitur justo nisi, feugiat eget enim ornare, mattis efficitur 
-                    eros. Quisque id commodo lectus. Suspendisse dapibus dapibus nunc id elementum. Sed ultricies, turpis nec pharetra euismod, mi turpis 
-                    maximus sem, et cursus mi nibh nec erat. Nunc laoreet, leo eget viverra aliquam, dolor nibh volutpat odio, ut semper justo nunc auctor
-                </pre>
+                    <ul> 
+                        <li><a href="./termos.html" target="_blank">Termos de Uso</a></li>
+                    </ul>
             <div>
-                <input type="checkbox" id="termos">
+                <input type="checkbox" id="termos" required>
                 <label for="termos">Eu li e aceito todos os termos de uso</label>
             </div>
             </fieldset>
@@ -174,8 +144,54 @@
         <fieldset>
             <legend>Opções de Preferência</legend>
             <p>
-                <label for="passw">Repetir Senha:</label>
-                <input type="password" id= "passw" name="senharepetida">
+                Preencha as opções de acordo com sua preferência:
+                <div>
+                    <label for="cor">Cor:</label>
+                    <input type="color" id= "cor" name="cor">
+                </div>
+            </p>
+            <p>
+                <div>
+                    <label for="mescompra">Mês de compra:</label>
+                    <input type="month" id= "mescompra" name="mesCompra">
+                </div>
+            </p>
+            <p>
+                <div>
+                    Produtos:
+                </div>
+                <div>
+                    <input type="checkbox" id="p1">
+                    <label for="p1">Higiene</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="p2">
+                    <label for="p2">Brinquedos</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="p3">
+                    <label for="p3">Eletrodomésticos</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="p4">
+                    <label for="p4">Limpeza</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="p5">
+                    <label for="p5">Alimentos</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="p6">
+                    <label for="p6">Eletrônicos</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="p7">
+                    <label for="p7">Cama, Mesa e  Banho</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="p8">
+                    <label for="p8">Ferramentas</label>
+                </div>
             </p>
         </fieldset>
         <button>Salvar</button>
